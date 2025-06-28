@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/shield.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🛡️ CyberSentry - AI-Powered Cybersecurity Analysis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+      .bolt-badge {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 9999;
+        width: 60px;
+        height: 60px;
+      }
+
+      .bolt-badge img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .bolt-badge img:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 🔗 Bolt Badge with Link -->
+    <a
+      href="https://bolt.new/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="bolt-badge"
+    >
+      <img src="/bolt_badge.png" alt="Powered by Bolt.New" />
+    </a>
+
+    <!-- React Mount -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
