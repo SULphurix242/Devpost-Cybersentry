@@ -8,10 +8,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-C56nXtam.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-QE93GAZK.css">
+    <style>
+      .bolt-badge {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 9999;
+        width: 60px;
+        height: 60px;
+      }
+
+      .bolt-badge img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .bolt-badge img:hover {
+        transform: scale(1.1);
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-DnCZnDxq.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-oeLzN_uu.css">
   </head>
   <body>
+    <!-- 🔗 Bolt Badge with Link -->
+    <a
+      href="https://bolt.new/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="bolt-badge"
+    >
+      <img src="/bolt_badge.png" alt="Powered by Bolt.New" />
+    </a>
+
+    <!-- React Mount -->
     <div id="root"></div>
   </body>
 </html>
